@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="secili gruplari calistirma">
+    <test name="secili grouplari olusturma">
+        <!-- istedigimiz grupları çalıştırmak için 2 bilgi vermeliyiz
+         1- nerede bulunan test methodları çalışacak ?
+         2- hangi grup ismine sahip methodlar çalışacak ? -->
+
+        <groups>
+            <run>
+                <include name="smoke"></include>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="tests.ders11_TestNGFramework"></package>
+            <package name="tests.ders12_assertions_POMGelistirmeler"></package>
+        </packages>
+
+    </test>
+</suite>

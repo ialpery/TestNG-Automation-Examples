@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Method calistirma">
+    
+    <test name="Methodlari calistirma">
+        
+        <classes>
+            <class name="tests.ders11_TestNGFramework.C01_Priority">
+                <methods>
+                    <include name="facebookTest"></include>
+                    <exclude name="youtubeTest"></exclude>
+                </methods>
+            </class>
+            <class name="tests.ders12_assertions_POMGelistirmeler.C04_NegativeLoginTest">
+                <methods>
+                    <exclude name="NegatifLoginTest"></exclude>   <!-- exclude ile belirtilen method çalışmaz. O classtaki diğer tüm methodlar çalıştırılır-->
+
+                </methods>
+            </class>
+        </classes>
+        
+    </test>
+    
+</suite>
